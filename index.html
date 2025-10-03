@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Sabrina Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Sabrina Silva</span></a>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+            <li>
+                <a href="#experience">Experiência</a>
+            </li>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn">Visite Github</button>
+    </header>
+
+    
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="maravilhosa.jpg" alt="Foto de Sabrina">
+            <div class="info-box">
+                <h3>Olá, eu sou a</h3>
+                <h1>Sabrina Silva</h1>
+                <span>Estudante de Engenharia de Software</span>
+
+                <div class="btn-group">
+                    <div class="btn-group">
+                        
+                        <a href="curriculo.pdf" download class="btn">Download CV</a>
+                        <a href="https://wa.me/5511910259232" target="_blank" class="btn">Contato</a>
+                    </div>
+                </div>
+                <div class="sociais">
+                        <a href="https://github.com/sabrinasiilva/sabrinasiilva" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                        <a href="https://www.linkedin.com/in/sabrina-da-conceição-silva-82a863237" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+
+        <h2 class="section-title">Experiências</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+            
+                    <i class="fa-solid fa-code"></i>
+                    <span>Trabalho Acadêmico</span>
+                    <h3>Desenvolvimento de APP</h3>
+                    <p>Aplicativo criado para o TCC da ETEC</p>
+                </div>
+
+                <div class="grid-card">
+            
+                    <i class="fa-solid fa-code"></i>
+                    <span>Trabalho Acadêmico</span>
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Aplicativo criado para projeto de extensão na faculdade</p>
+                </div>
+
+             
+            </div>
+            <img src="maravilhosa.jpg" alt="">
+        </div>
+    </section>
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Projetos recentes</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="print.png" alt="Projeto 1">
+                <h3>Projeto X</h3>
+                <p> Site de gerenciamento financeiro, com dashboards, relatorios e sistema de investimentos</p>
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <a href="https://finpro-flo8.onrender.com" target="_blank">
+                            <div class="btn">Live Demo</div>
+                        </a>
+                        <a href="https://github.com/sabrinasiilva/FinPro.git" target="_blank">
+                            <div class="btn">Github Repo</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="print2.png" alt="Projeto 1">
+                <h3>Projeto Y</h3>
+                <p> Site de gestão preditiva, com intuito de prevenir problemas financeiros, e perda de vendas para pequenas e grandes empresas</p>
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <a href="https://sabrinasiilva.github.io/SmartStock/" target="_blank">
+                            <div class="btn">Live Demo</div>
+                        </a>
+                        <a href="https://github.com/sabrinasiilva/SmartStock.git" target="_blank">
+                            <div class="btn">Github Repo</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="print4.png" alt="Projeto 1">
+                <h3>Projeto Z</h3>
+                <p> Sistema em pyhton de uma biblioteca digital, com interface grafica em Tkinter</p>
+                <div class="btn-group">
+                    <a href="https://github.com/sabrinasiilva/Biblioteca-Digital.git" target="_blank">
+                        <div class="btn">Github Repo</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="input-box">
+
+            <h2 class="section-title"> Entre em Contato</h2>
+
+        <form action="https://formspree.io/f/mnqekjgp" method="POST">
+            <div class="input">
+                <input type="email" name="email" placeholder="Digite seu email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="#about">Sobre</a>
+            </li>
+            <li>
+                <a href="#experience">Experiencia</a>
+            </li>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato">Contatos</a>
+            </li>
+        </ul>
+        <p class="copyright">© 2025 Sabrina Silva. Todos os direitos reservados.</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
