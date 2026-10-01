@@ -3,181 +3,318 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Sabrina Silva</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sabrina Silva · Desenvolvedora de Software</title>
+    <meta name="description" content="Estagiária de desenvolvimento na Populis e estudante de Engenharia de Software na UMC. Front-end, back-end, mobile e testes.">
+
+    <meta property="og:title" content="Sabrina Silva · Desenvolvedora de Software">
+    <meta property="og:description" content="Estagiária de desenvolvimento na Populis e estudante de Engenharia de Software na UMC.">
+    <meta property="og:image" content="https://sabrinasiilva.github.io/Meu-Portifolio/maravilhosa.jpg">
+    <meta property="og:url" content="https://sabrinasiilva.github.io/Meu-Portifolio/">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><span>Sabrina Silva</span></a>
+        <a href="#top" class="logo">Sabrina Silva</a>
 
-        <ul class="nav-links">
-            <li>
-                <a href="#about">Sobre</a>
-            </li>
-            <li>
-                <a href="#experience">Experiência</a>
-            </li>
-            <li>
-                <a href="#projects">Projetos</a>
-            </li>
-            <li>
-                <a href="#contact">Contato</a>
-            </li>
-        </ul>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <button class="visit-btn">Visite Github</button>
+        <a href="https://github.com/sabrinasiilva" target="_blank" rel="noopener" class="visit-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
 
-    
+    <main>
+        <section id="top" class="hero">
+            <img src="maravilhosa.jpg" alt="Foto de Sabrina Silva" class="hero-photo">
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="maravilhosa.jpg" alt="Foto de Sabrina">
-            <div class="info-box">
-                <h3>Olá, eu sou a</h3>
+            <div class="hero-text">
+                <p class="hello">Olá, eu sou a</p>
                 <h1>Sabrina Silva</h1>
-                <span>Estudante de Engenharia de Software</span>
+                <p class="role">Desenvolvedora de Software</p>
+                <p class="lead">
+                    Estagiária na Populis, onde desenvolvo interfaces e modelo workflows e regras de negócio para uma
+                    plataforma de folha de pagamento e RH. Estudo Engenharia de Software na UMC.
+                </p>
 
                 <div class="btn-group">
-                    <div class="btn-group">
-                        
-                        <a href="curriculo.pdf" download class="btn">Download CV</a>
-                        <a href="https://wa.me/5511910259232" target="_blank" class="btn">Contato</a>
-                    </div>
+                    <a href="#projects" class="btn btn-primary">Ver projetos</a>
+                    <a href="Sabrina-Silva-Curriculo.pdf" download="Sabrina-Silva-Curriculo.pdf" class="btn">Baixar CV</a>
                 </div>
+
                 <div class="sociais">
-                        <a href="https://github.com/sabrinasiilva/sabrinasiilva" target="_blank">
+                    <a href="https://github.com/sabrinasiilva" target="_blank" rel="noopener" aria-label="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
-                        <a href="https://www.linkedin.com/in/sabrina-da-conceição-silva-82a863237" target="_blank">
+                    <a href="https://www.linkedin.com/in/sabrina-silva-82a863237" target="_blank" rel="noopener" aria-label="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-
-        <h2 class="section-title">Experiências</h2>
-
-        <div class="experience-info">
-
-            <div class="grid">
-                <div class="grid-card">
-            
-                    <i class="fa-solid fa-code"></i>
-                    <span>Trabalho Acadêmico</span>
-                    <h3>Desenvolvimento de APP</h3>
-                    <p>Aplicativo criado para o TCC da ETEC</p>
-                </div>
-
-                <div class="grid-card">
-            
-                    <i class="fa-solid fa-code"></i>
-                    <span>Trabalho Acadêmico</span>
-                    <h3>Desenvolvimento de Software</h3>
-                    <p>Aplicativo criado para projeto de extensão na faculdade</p>
-                </div>
-
-             
-            </div>
-            <img src="maravilhosa.jpg" alt="">
-        </div>
-    </section>
-    <section id="projects" class="projects">
-
-        <h2 class="section-title">Projetos recentes</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="print.png" alt="Projeto 1">
-                <h3>Projeto X</h3>
-                <p> Site de gerenciamento financeiro, com dashboards, relatorios e sistema de investimentos</p>
-                <div class="btn-group">
-                    <div class="btn-group">
-                        <a href="https://finpro-flo8.onrender.com" target="_blank">
-                            <div class="btn">Live Demo</div>
-                        </a>
-                        <a href="https://github.com/sabrinasiilva/FinPro.git" target="_blank">
-                            <div class="btn">Github Repo</div>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="print2.png" alt="Projeto 1">
-                <h3>Projeto Y</h3>
-                <p> Site de gestão preditiva, com intuito de prevenir problemas financeiros, e perda de vendas para pequenas e grandes empresas</p>
-                <div class="btn-group">
-                    <div class="btn-group">
-                        <a href="https://sabrinasiilva.github.io/SmartStock/" target="_blank">
-                            <div class="btn">Live Demo</div>
-                        </a>
-                        <a href="https://github.com/sabrinasiilva/SmartStock.git" target="_blank">
-                            <div class="btn">Github Repo</div>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="print4.png" alt="Projeto 1">
-                <h3>Projeto Z</h3>
-                <p> Sistema em pyhton de uma biblioteca digital, com interface grafica em Tkinter</p>
-                <div class="btn-group">
-                    <a href="https://github.com/sabrinasiilva/Biblioteca-Digital.git" target="_blank">
-                        <div class="btn">Github Repo</div>
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sabrinacsilva09@gmail.com" target="_blank" rel="noopener" aria-label="Enviar e-mail pelo Gmail">
+                        <i class="fa-solid fa-envelope"></i>
                     </a>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="experience" class="section">
+            <h2 class="section-title">Experiência</h2>
 
-    <section class="contact" id="contact">
-
-        <div class="input-box">
-
-            <h2 class="section-title"> Entre em Contato</h2>
-
-            <form action="mailto:sabrinacsilva09@gmail.com" method="post" enctype="text/plain">
-                <div class="input">
-                    <input type="email" name="email" placeholder="Digite seu email" required>
-                    <i class="fa-solid fa-envelope"></i>
+            <article class="job reveal">
+                <div class="job-head">
+                    <div>
+                        <h3>Desenvolvedora Front-End <span class="muted">(Estágio)</span></h3>
+                        <p class="company">Populis · Folha de Pagamento, Sistema e BPO</p>
+                    </div>
+                    <span class="period">dez/2025 – atual · Remoto</span>
                 </div>
-                <button type="submit" class="btn">Enviar</button>
-            </form>
 
+                <p class="job-context">
+                    Plataforma de folha de pagamento e RH usada por empresas de médio e grande porte.
+                </p>
 
-            
-        </div>
-    </section>
+                <ul class="job-list">
+                    <li>Modelo processos em BPMN e transformo em workflows automatizados, com regras de negócio configuradas em JSON</li>
+                    <li>Desenvolvo componentes e telas em React + TypeScript, estilizados com Tailwind CSS</li>
+                    <li>Integro o front-end com APIs REST</li>
+                    <li>Participo de features do zero, migrações de versão e melhorias contínuas</li>
+                    <li>Testo em homologação e produção e escrevo a documentação técnica do que entrego</li>
+                    <li>Trabalho em sprints com Scrum, acompanho as demandas em Kanban e versiono no Bitbucket com fluxo de branches</li>
+                </ul>
+
+                <ul class="tags">
+                    <li>BPMN</li><li>Workflows</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>APIs REST</li><li>Scrum</li><li>Kanban</li><li>Bitbucket</li>
+                </ul>
+            </article>
+
+            <h3 class="subtitle reveal">Formação</h3>
+            <div class="education reveal">
+                <div class="edu-item">
+                    <span class="period">2025 – 2028</span>
+                    <div>
+                        <h4>Engenharia de Software</h4>
+                        <p class="muted">Universidade de Mogi das Cruzes (UMC) · cursando</p>
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <span class="period">2023 – 2024</span>
+                    <div>
+                        <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                        <p class="muted">ETEC · TCC: VitalVue, app de nutrição feito em Kodular (low-code)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Projetos</h2>
+
+            <article class="project-featured reveal">
+                <div class="project-body">
+                    <ul class="badges">
+                        <li class="badge badge-live">Em andamento</li>
+                        <li class="badge">Projeto de extensão · UMC</li>
+                    </ul>
+                    <h3>CO2Bank</h3>
+                    <p>
+                        Carteira com limite ecológico. Cada compra no cartão tem o CO2 estimado pela categoria
+                        do estabelecimento, e cada usuário tem um limite mensal. A partir de 80% do limite,
+                        uma IA avisa quais categorias mais pesaram, para ninguém ser pego de surpresa.
+                    </p>
+                    <p>
+                        API REST em Flask com arquitetura em camadas, autenticação JWT e documentação Swagger.
+                        App mobile em Flutter. Próximas etapas: transações via Open Finance e bloqueio do cartão
+                        quando o limite estoura.
+                    </p>
+                    <ul class="tags">
+                        <li>Flutter</li><li>Dart</li><li>Flask</li><li>PostgreSQL</li><li>JWT</li><li>Gemini API</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://co2bank-flask.onrender.com/docs" target="_blank" rel="noopener" class="btn btn-primary">Documentação da API</a>
+                    </div>
+                    <p class="note">Desenvolvido em equipe. Servidor gratuito: o primeiro acesso pode levar até 1 minuto.</p>
+                </div>
+                <img src="print-co2bank.png" alt="Documentação Swagger da API do CO2Bank com rotas de autenticação e administração">
+            </article>
+
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <img src="print.png" alt="Dashboard do FinPro com saldo, receitas, despesas e gráficos">
+                    <div class="project-body">
+                        <h3>FinPro</h3>
+                        <p>
+                            Controle financeiro com login, receitas, despesas e carteira de investimentos.
+                            Filtros por período, gráficos e exportação para Excel.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li><li>Flask</li><li>SQLite</li><li>Chart.js</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://finpro-flo8.onrender.com" target="_blank" rel="noopener" class="btn btn-primary">Ver online</a>
+                            <a href="https://github.com/sabrinasiilva/FinPro" target="_blank" rel="noopener" class="btn">Código</a>
+                        </div>
+                        <p class="note">Servidor gratuito: o primeiro acesso pode levar uns 30 segundos.</p>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="print-mercado.png" alt="Tela de cadastro de produtos do Sistema de Mercado">
+                    <div class="project-body">
+                        <h3>Sistema de Mercado</h3>
+                        <p>
+                            Sistema web de gestão de produtos com CRUD completo. Arquitetura MVC + DAO em Java,
+                            com consultas parametrizadas contra SQL Injection. Feito em dupla na disciplina de
+                            Implementação Orientada a Objetos.
+                        </p>
+                        <ul class="tags">
+                            <li>Java</li><li>Servlet</li><li>JSP</li><li>MySQL</li><li>MVC</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sabrinasiilva/Sistema-Mercado" target="_blank" rel="noopener" class="btn">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card reveal">
+                    <img src="print4.png" alt="Tela inicial da Biblioteca Digital com escolha entre leitor e bibliotecário">
+                    <div class="project-body">
+                        <h3>Biblioteca Digital</h3>
+                        <p>
+                            App desktop com dois perfis: o bibliotecário cadastra e remove livros,
+                            o leitor reserva e devolve.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li><li>Tkinter</li><li>POO</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/sabrinasiilva/Biblioteca-Digital" target="_blank" rel="noopener" class="btn">Código</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="highlights">
+                <div class="highlight reveal">
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <h3>Workflows e regras de negócio</h3>
+                    <p>Modelo processos em BPMN e transformo em fluxos que o sistema executa, com regras configuradas em JSON.</p>
+                </div>
+                <div class="highlight reveal">
+                    <i class="fa-solid fa-plug"></i>
+                    <h3>APIs dos dois lados</h3>
+                    <p>No trabalho, integro o front-end com APIs REST. Nos projetos, construo as APIs: autenticação JWT, documentação Swagger e deploy.</p>
+                </div>
+                <div class="highlight reveal">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Do teste à produção</h3>
+                    <p>Testo em homologação e produção, versiono com branches e documento o que entrego.</p>
+                </div>
+                <div class="highlight reveal">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h3>Times ágeis</h3>
+                    <p>Trabalho em sprints com Scrum e organizo as demandas em quadros Kanban.</p>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-group reveal">
+                    <h3><i class="fa-solid fa-briefcase"></i> No trabalho</h3>
+                    <ul class="tags">
+                        <li>BPMN</li><li>Workflows</li><li>JSON</li><li>React</li><li>TypeScript</li>
+                        <li>Tailwind CSS</li><li>APIs REST</li><li>Scrum</li><li>Kanban</li><li>Git</li><li>Bitbucket</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal">
+                    <h3><i class="fa-solid fa-code"></i> Em projetos</h3>
+                    <ul class="tags">
+                        <li>JavaScript</li><li>HTML/CSS</li><li>Python</li><li>Flask</li><li>Java</li>
+                        <li>Servlet/JSP</li><li>Dart</li><li>Flutter</li><li>MySQL</li><li>PostgreSQL</li>
+                        <li>SQLite</li><li>Firebase</li><li>Gemini API</li>
+                    </ul>
+                </div>
+                <div class="skill-group reveal">
+                    <h3><i class="fa-solid fa-book-open"></i> Estudando</h3>
+                    <ul class="tags">
+                        <li>Spring</li><li>Docker</li><li>Jest</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <h2 class="section-title">Sobre</h2>
+
+            <div class="about-text reveal">
+                <p>
+                    Comecei a programar no técnico da ETEC e segui para Engenharia de Software.
+                    Hoje transformo regra de folha de pagamento em tela que funciona.
+                </p>
+                <p>
+                    Ainda estou escolhendo onde quero me especializar. Até aqui passei por front-end, back-end,
+                    mobile, testes e documentação, e quero ganhar experiência também em infraestrutura e IA.
+                </p>
+                <p>
+                    Fora do trabalho, crio ferramentas para resolver problemas meus, como os simulados
+                    que uso para estudar para as provas da faculdade.
+                </p>
+                <ul class="facts">
+                    <li><i class="fa-solid fa-location-dot"></i> Tatuapé, São Paulo – SP</li>
+                    <li><i class="fa-solid fa-language"></i> Português nativo · Inglês intermediário</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2 class="section-title">Contato</h2>
+            <p class="muted reveal">O jeito mais rápido de falar comigo é por e-mail ou LinkedIn.</p>
+
+            <a href="mailto:sabrinacsilva09@gmail.com" class="email-link reveal" id="copy-email" title="Clique para copiar">
+                sabrinacsilva09@gmail.com <i class="fa-regular fa-copy"></i>
+            </a>
+            <p class="copy-feedback" id="copy-feedback" aria-live="polite"></p>
+
+            <div class="btn-group reveal">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=sabrinacsilva09@gmail.com" target="_blank" rel="noopener" class="btn">
+                    <i class="fa-solid fa-envelope"></i> Gmail
+                </a>
+                <a href="https://www.linkedin.com/in/sabrina-silva-82a863237" target="_blank" rel="noopener" class="btn">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://wa.me/5511910259232" target="_blank" rel="noopener" class="btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://github.com/sabrinasiilva" target="_blank" rel="noopener" class="btn">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <ul>
-            <li>
-                <a href="#about">Sobre</a>
-            </li>
-            <li>
-                <a href="#experience">Experiencia</a>
-            </li>
-            <li>
-                <a href="#projects">Projetos</a>
-            </li>
-            <li>
-                <a href="#contato">Contatos</a>
-            </li>
-        </ul>
-        <p class="copyright">© 2025 Sabrina Silva. Todos os direitos reservados.</p>
-
+        <p>© <span id="year">2026</span> Sabrina Silva</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
