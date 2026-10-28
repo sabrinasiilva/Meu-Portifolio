@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CO2Bank · Estudo de caso · Sabrina Silva</title>
+    <meta name="description" content="Estudo de caso do CO2Bank: app Android em Flutter com API em Flask, IA com Gemini, verificação facial e publicação automática." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta property="og:title" content="CO2Bank · Estudo de caso" />
+    <meta property="og:description" content="Carteira com limite ecológico: cada compra mostra o CO2 que gerou, e uma IA avisa antes de você passar do limite." />
+    <meta property="og:image" content="https://sabrinasiilva.github.io/Meu-Portifolio/co2bank-poster.jpg" />
+    <meta property="og:url" content="https://sabrinasiilva.github.io/Meu-Portifolio/co2bank.html" />
+    <meta property="og:type" content="article" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+      try {
+        var tema = localStorage.getItem('tema')
+        var escuro = tema ? tema === 'escuro' : matchMedia('(prefers-color-scheme: dark)').matches
+        if (escuro) document.documentElement.classList.add('dark')
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/co2bank.tsx"></script>
+  </body>
+</html>
