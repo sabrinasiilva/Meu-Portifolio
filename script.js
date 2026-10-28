@@ -58,3 +58,28 @@ if ('IntersectionObserver' in window) {
 } else {
     revealItems.forEach(item => item.classList.add('visible'));
 }
+
+// Vídeo do CO2Bank: toca sozinho (mudo) quando aparece na tela e pausa quando sai.
+// Não faz isso se a pessoa pausou à mão ou prefere menos movimento.
+const demoVideo = document.querySelector('#co2bank-video');
+const menosMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (demoVideo && 'IntersectionObserver' in window && !menosMovimento) {
+    let pausadoPelaPessoa = false;
+    let pausandoSozinho = false;
+
+    demoVideo.addEventListener('pause', () => {
+        if (!pausandoSozinho) pausadoPelaPessoa = true;
+        pausandoSozinho = false;
+    });
+    demoVideo.addEventListener('play', () => { pausadoPelaPessoa = false; });
+
+    new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting && !pausadoPelaPessoa) {
+            demoVideo.play().catch(() => {});
+        } else if (!entry.isIntersecting && !demoVideo.paused) {
+            pausandoSozinho = true;
+            demoVideo.pause();
+        }
+    }, { threshold: 0.5 }).observe(demoVideo);
+}

@@ -129,29 +129,38 @@
             <article class="project-featured reveal">
                 <div class="project-body">
                     <ul class="badges">
-                        <li class="badge badge-live">Em andamento</li>
+                        <li class="badge badge-live">Publicado</li>
                         <li class="badge">Projeto de extensão · UMC</li>
                     </ul>
                     <h3>CO2Bank</h3>
                     <p>
-                        Carteira com limite ecológico. Cada compra no cartão tem o CO2 estimado pela categoria
-                        do estabelecimento, e cada usuário tem um limite mensal. A partir de 80% do limite,
-                        uma IA avisa quais categorias mais pesaram, para ninguém ser pego de surpresa.
+                        Carteira com limite ecológico. Cada compra no cartão mostra o CO2 estimado pela categoria
+                        do estabelecimento, e quando o mês passa de 80% do limite, uma IA avisa quais categorias
+                        mais pesaram, para ninguém ser pego de surpresa.
                     </p>
                     <p>
-                        API REST em Flask com arquitetura em camadas, autenticação JWT e documentação Swagger.
-                        App mobile em Flutter. Próximas etapas: transações via Open Finance e bloqueio do cartão
-                        quando o limite estoura.
+                        App Android em Flutter com verificação facial ao vivo, notificações push e Open Finance
+                        simulado. API REST em Flask com arquitetura em camadas, JWT e 87 testes automatizados.
+                        A cada atualização, o GitHub Actions roda os testes e publica o app sozinho.
                     </p>
                     <ul class="tags">
-                        <li>Flutter</li><li>Dart</li><li>Flask</li><li>PostgreSQL</li><li>JWT</li><li>Gemini API</li>
+                        <li>Flutter</li><li>Flask</li><li>PostgreSQL</li><li>Gemini</li><li>ML Kit</li><li>Firebase</li><li>GitHub Actions</li>
                     </ul>
                     <div class="project-links">
-                        <a href="https://co2bank-flask.onrender.com/docs" target="_blank" rel="noopener" class="btn btn-primary">Documentação da API</a>
+                        <a href="https://sabrinasiilva.github.io/co2bank-dart/" target="_blank" rel="noopener" class="btn btn-primary">Abrir no navegador</a>
+                        <a href="https://sabrinasiilva.github.io/co2bank-dart/co2bank.apk" class="btn">Baixar APK</a>
+                        <a href="https://github.com/sabrinasiilva/co2bank-dart" target="_blank" rel="noopener" class="btn">Código</a>
                     </div>
-                    <p class="note">Desenvolvido em equipe. Servidor gratuito: o primeiro acesso pode levar até 1 minuto.</p>
+                    <p class="note">
+                        Equipe de 5 pessoas, em que fui Product Owner e programadora.
+                        <a href="https://co2bank-flask.onrender.com/docs" target="_blank" rel="noopener">Documentação da API</a>
+                    </p>
                 </div>
-                <img src="print-co2bank.png" alt="Documentação Swagger da API do CO2Bank com rotas de autenticação e administração">
+                <div class="project-video">
+                    <video id="co2bank-video" src="co2bank-demo.mp4" poster="co2bank-poster.jpg"
+                           muted loop playsinline controls preload="none"
+                           aria-label="Demonstração do app CO2Bank: login, extrato, gráfico de CO2, Open Finance e cupons"></video>
+                </div>
             </article>
 
             <div class="projects-grid">
@@ -249,7 +258,7 @@
                     <h3><i class="fa-solid fa-code"></i> Em projetos</h3>
                     <ul class="tags">
                         <li>JavaScript</li><li>HTML/CSS</li><li>Python</li><li>Flask</li><li>Java</li>
-                        <li>Servlet/JSP</li><li>Dart</li><li>Flutter</li><li>MySQL</li><li>PostgreSQL</li>
+                        <li>Servlet/JSP</li><li>Dart</li><li>Flutter</li><li>GitHub Actions</li><li>MySQL</li><li>PostgreSQL</li>
                         <li>SQLite</li><li>Firebase</li><li>Gemini API</li>
                     </ul>
                 </div>
