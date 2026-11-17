@@ -11,6 +11,8 @@ export const links = {
     web: 'https://sabrinasiilva.github.io/co2bank-dart/',
     code: 'https://github.com/sabrinasiilva/co2bank-dart',
     api: 'https://co2bank-flask.onrender.com/docs',
+    apiCode: 'https://github.com/sabrinasiilva/co2bank-flask',
+    video: 'https://drive.google.com/file/d/1IzNqTActtXeXCrlOLww5UnfDMfaRFG3w/view?usp=sharing',
   },
   finpro: {
     live: 'https://finpro-flo8.onrender.com',

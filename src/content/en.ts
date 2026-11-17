@@ -69,11 +69,11 @@ export const en: Content = {
   projects: {
     title: 'Projects',
     featured: {
-      badges: ['Live', 'University extension project · UMC'],
+      badges: ['Completed and live', 'University project · UMC'],
       name: 'CO2Bank',
       paragraphs: [
         'A wallet with an eco limit. Every card purchase shows its estimated CO2 based on the merchant category, and when the month passes 80% of the limit, an AI explains which categories weighed the most, so nobody gets caught off guard.',
-        'Android app in Flutter with live face verification, push notifications and simulated Open Finance. REST API in Flask with a layered architecture, JWT and 87 automated tests. On every update, GitHub Actions runs the tests and publishes the app.',
+        'Android app in Flutter with live face verification, push notifications and simulated Open Finance. REST API in Flask with a layered architecture and JWT, with 94 automated tests in the API and 171 in the app. On every update, GitHub Actions runs the tests and publishes the app.',
       ],
       tags: ['Flutter', 'Flask', 'PostgreSQL', 'Gemini', 'ML Kit', 'Firebase', 'GitHub Actions'],
       note: 'Team of 5, where I was the Product Owner and a developer.',
@@ -167,17 +167,19 @@ export const en: Content = {
   },
   caseStudy: {
     docTitle: 'CO2Bank · Case study · Sabrina Silva',
-    badges: ['Live', 'University extension project · UMC 2026', 'Team of 5'],
+    badges: ['Completed and live', 'University project · UMC 2026', 'Team of 5'],
     title: 'CO2Bank',
     subtitle: 'A smart wallet with an eco limit',
     intro:
-      'Every card purchase shows the CO2 it generated, and an AI warns the user before they go over the monthly limit. Android app in Flutter with a Python and Flask API, published, with tests running on every update.',
+      'Every card purchase shows the CO2 it generated, and an AI warns the user before they go over the monthly limit. Android app in Flutter with a Python and Flask API, delivered for the Flutter App Development course and published, with tests running on every update.',
     videoAria: 'CO2Bank app demo',
     links: {
       download: 'Download for Android',
       web: 'Open in the browser',
       code: 'App code',
+      apiCode: 'API code',
       api: 'API docs',
+      video: 'Presentation video',
     },
     problem: {
       title: 'The problem',
@@ -231,16 +233,16 @@ export const en: Content = {
         { name: 'Google Gemini', detail: 'AI alerts' },
         { name: 'Firebase Cloud Messaging', detail: 'push notifications' },
         { name: 'Open Finance', detail: 'simulated in the official format' },
-        { name: 'Resend', detail: 'emails' },
+        { name: 'Brevo', detail: 'emails' },
       ],
       ci: 'GitHub Actions: tests, then the APK and website are published',
     },
     numbers: {
       title: 'By the numbers',
       items: [
-        { value: '87', label: 'automated tests in the API' },
+        { value: '94', label: 'automated tests in the API' },
+        { value: '171', label: 'automated tests in the app' },
         { value: '5', label: 'people on the team' },
-        { value: '12', label: 'purchase categories with a CO2 factor' },
         { value: '80%', label: 'of the limit triggers the AI alert' },
       ],
     },
@@ -253,7 +255,7 @@ export const en: Content = {
       ],
     },
     next: {
-      title: 'Next steps',
+      title: 'Possible next steps',
       items: [
         'Real Open Finance integration, currently simulated in the official API format.',
         'Replace the illustrative CO2 factors with an audited database, like the ones banks use.',

@@ -26,7 +26,7 @@ export interface CaseStudy {
   subtitle: string
   intro: string
   videoAria: string
-  links: { download: string; web: string; code: string; api: string }
+  links: { download: string; web: string; code: string; apiCode: string; api: string; video: string }
   problem: { title: string; text: string }
   solution: { title: string; features: string[] }
   role: { title: string; text: string }

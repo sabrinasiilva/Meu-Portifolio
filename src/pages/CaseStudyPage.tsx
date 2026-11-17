@@ -115,10 +115,18 @@ export function CaseStudyPage() {
               <ButtonLink href={links.co2bank.code} external>
                 {c.links.code}
               </ButtonLink>
+              <ButtonLink href={links.co2bank.apiCode} external>
+                {c.links.apiCode}
+              </ButtonLink>
             </div>
-            <a href={links.co2bank.api} target="_blank" rel="noopener" className="border-b border-line text-sm text-muted transition hover:border-ink hover:text-ink">
-              {c.links.api}
-            </a>
+            <p className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted">
+              <a href={links.co2bank.video} target="_blank" rel="noopener" className="border-b border-line transition hover:border-ink hover:text-ink">
+                {c.links.video}
+              </a>
+              <a href={links.co2bank.api} target="_blank" rel="noopener" className="border-b border-line transition hover:border-ink hover:text-ink">
+                {c.links.api}
+              </a>
+            </p>
           </div>
           <PhoneVideo ariaLabel={c.videoAria} />
         </section>

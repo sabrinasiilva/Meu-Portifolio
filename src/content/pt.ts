@@ -69,11 +69,11 @@ export const pt: Content = {
   projects: {
     title: 'Projetos',
     featured: {
-      badges: ['Publicado', 'Projeto de extensão · UMC'],
+      badges: ['Concluído e publicado', 'Projeto acadêmico · UMC'],
       name: 'CO2Bank',
       paragraphs: [
         'Carteira com limite ecológico. Cada compra no cartão mostra o CO2 estimado pela categoria do estabelecimento, e quando o mês passa de 80% do limite, uma IA avisa quais categorias mais pesaram, para ninguém ser pego de surpresa.',
-        'App Android em Flutter com verificação facial ao vivo, notificações push e Open Finance simulado. API REST em Flask com arquitetura em camadas, JWT e 87 testes automatizados. A cada atualização, o GitHub Actions roda os testes e publica o app sozinho.',
+        'App Android em Flutter com verificação facial ao vivo, notificações push e Open Finance simulado. API REST em Flask com arquitetura em camadas e JWT, com 94 testes automatizados na API e 171 no app. A cada atualização, o GitHub Actions roda os testes e publica o app sozinho.',
       ],
       tags: ['Flutter', 'Flask', 'PostgreSQL', 'Gemini', 'ML Kit', 'Firebase', 'GitHub Actions'],
       note: 'Equipe de 5 pessoas, em que fui Product Owner e programadora.',
@@ -167,17 +167,19 @@ export const pt: Content = {
   },
   caseStudy: {
     docTitle: 'CO2Bank · Estudo de caso · Sabrina Silva',
-    badges: ['Publicado', 'Projeto de extensão · UMC 2026', 'Equipe de 5 pessoas'],
+    badges: ['Concluído e publicado', 'Projeto acadêmico · UMC 2026', 'Equipe de 5 pessoas'],
     title: 'CO2Bank',
     subtitle: 'Carteira inteligente com limite ecológico',
     intro:
-      'Cada compra no cartão mostra o CO2 que gerou, e uma IA avisa antes de a pessoa passar do limite do mês. App Android em Flutter com API em Python e Flask, publicado e com testes rodando a cada atualização.',
+      'Cada compra no cartão mostra o CO2 que gerou, e uma IA avisa antes de a pessoa passar do limite do mês. App Android em Flutter com API em Python e Flask, entregue na disciplina de Desenvolvimento de Aplicativos em Flutter e publicado, com testes rodando a cada atualização.',
     videoAria: 'Demonstração do app CO2Bank',
     links: {
       download: 'Baixar para Android',
       web: 'Ver no navegador',
       code: 'Código do app',
+      apiCode: 'Código da API',
       api: 'Documentação da API',
+      video: 'Vídeo de apresentação',
     },
     problem: {
       title: 'O problema',
@@ -231,16 +233,16 @@ export const pt: Content = {
         { name: 'Google Gemini', detail: 'alertas com IA' },
         { name: 'Firebase Cloud Messaging', detail: 'notificações push' },
         { name: 'Open Finance', detail: 'simulado no formato oficial' },
-        { name: 'Resend', detail: 'e-mails' },
+        { name: 'Brevo', detail: 'e-mails' },
       ],
       ci: 'GitHub Actions: testes, depois APK e site publicados',
     },
     numbers: {
       title: 'Em números',
       items: [
-        { value: '87', label: 'testes automatizados na API' },
+        { value: '94', label: 'testes automatizados na API' },
+        { value: '171', label: 'testes automatizados no app' },
         { value: '5', label: 'pessoas na equipe' },
-        { value: '12', label: 'categorias de compra com fator de CO2' },
         { value: '80%', label: 'do limite dispara o alerta da IA' },
       ],
     },
@@ -253,7 +255,7 @@ export const pt: Content = {
       ],
     },
     next: {
-      title: 'Próximos passos',
+      title: 'Evoluções possíveis',
       items: [
         'Integração real com o Open Finance, hoje simulada no formato da API oficial.',
         'Trocar os fatores de CO2 ilustrativos por uma base auditada, como as usadas por bancos.',
