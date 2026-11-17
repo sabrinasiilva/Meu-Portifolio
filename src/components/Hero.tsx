@@ -39,7 +39,7 @@ export function Hero() {
           <ButtonLink href="#projects" primary>
             {hero.ctaProjects}
           </ButtonLink>
-          <ButtonLink href={asset('Sabrina-Silva-Curriculo.pdf')} download="Sabrina-Silva-Curriculo.pdf">
+          <ButtonLink href={asset(hero.cvFile)} download={hero.cvFile}>
             <Download className="size-4" aria-hidden /> {hero.ctaCv}
           </ButtonLink>
         </div>

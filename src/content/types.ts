@@ -73,6 +73,7 @@ export interface Content {
     lead: string
     ctaProjects: string
     ctaCv: string
+    cvFile: string
     videoChip: string
     videoAria: string
   }

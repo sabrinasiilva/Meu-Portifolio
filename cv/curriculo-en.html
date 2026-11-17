@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume · Sabrina da Conceição Silva</title>
+    <!-- English version of curriculo.html, same layout. Source of Sabrina-Silva-Resume.pdf. -->
+    <style>
+        @page {
+            size: A4;
+            margin: 14mm 16mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9pt;
+            line-height: 1.35;
+            color: #000;
+            background: #fff;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 8pt;
+            border-bottom: 0.8pt solid #000;
+        }
+
+        h1 {
+            font-size: 16pt;
+            font-weight: bold;
+        }
+
+        .contact {
+            font-size: 8.5pt;
+            margin-top: 1pt;
+        }
+
+        section {
+            margin-top: 9pt;
+        }
+
+        h2 {
+            font-size: 9.5pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 2.5pt;
+            border-bottom: 0.6pt solid #000;
+            margin-bottom: 5pt;
+        }
+
+        .title {
+            font-weight: bold;
+        }
+
+        .date {
+            font-style: italic;
+            color: #333;
+            margin-top: 1pt;
+        }
+
+        .item + .item {
+            margin-top: 6pt;
+        }
+
+        ul {
+            list-style: none;
+            margin-top: 3pt;
+            padding-left: 8pt;
+        }
+
+        /* marcador no próprio texto, para leitores de currículo (ATS) lerem na ordem certa */
+        li {
+            padding-left: 8pt;
+            text-indent: -8pt;
+            margin-top: 1.5pt;
+        }
+
+        li::before {
+            content: '•';
+            display: inline-block;
+            width: 8pt;
+            text-indent: 0;
+        }
+
+        .lines p + p {
+            margin-top: 2pt;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SABRINA DA CONCEIÇÃO SILVA</h1>
+        <p class="contact">
+            Itaquaquecetuba, SP – Brazil | +55 11 91025-9232 | <a href="mailto:sabrinacsilva09@gmail.com">sabrinacsilva09@gmail.com</a> |
+            <a href="https://www.linkedin.com/in/sabrina-silva-82a863237">linkedin.com/in/sabrina-silva-82a863237</a>
+        </p>
+        <p class="contact">
+            <a href="https://github.com/sabrinasiilva">github.com/sabrinasiilva</a> |
+            Portfolio: <a href="https://sabrinasiilva.github.io/Meu-Portifolio/">sabrinasiilva.github.io/Meu-Portifolio</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Objective</h2>
+        <p>Internship in Information Technology.</p>
+    </section>
+
+    <section>
+        <h2>Professional experience</h2>
+        <p class="title">Front-End Developer (Intern) — POPULIS | Payroll | Software and BPO</p>
+        <p class="date">Dec 2025 – present | São Paulo, Brazil – Remote</p>
+        <ul>
+            <li>Process modeling in BPMN and workflow automation, with metadata-driven (JSON) and versioned business rules.</li>
+            <li>Development of dynamic interfaces for HR and BPO systems using React, TypeScript and Tailwind CSS.</li>
+            <li>REST API integration and technical documentation.</li>
+            <li>Testing in staging and production environments.</li>
+            <li>Work in Scrum sprints with tasks tracked on Kanban boards.</li>
+            <li>Branch management and version control on Bitbucket.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <p class="title">B.Sc. in Software Engineering — Universidade de Mogi das Cruzes (UMC)</p>
+            <p class="date">Feb 2025 – Dec 2028 (expected) | 4th semester (evening program)</p>
+        </div>
+        <div class="item">
+            <p class="title">Technical Degree in Systems Development — ETEC</p>
+            <p class="date">Jan 2023 – Dec 2024</p>
+        </div>
+    </section>
+
+    <section class="lines">
+        <h2>Technologies and tools</h2>
+        <p><b>Languages:</b> TypeScript, JavaScript, Python, Java, Dart</p>
+        <p><b>Front-End:</b> React, Tailwind CSS</p>
+        <p><b>Mobile:</b> Flutter</p>
+        <p><b>Back-End / Frameworks:</b> Flask, Java (Servlet and JSP), REST APIs</p>
+        <p><b>Databases:</b> Firebase, MySQL, PostgreSQL, SQLite, SQL</p>
+        <p><b>Process Modeling:</b> BPMN, workflows, JSON (business rules)</p>
+        <p><b>Agile Methods:</b> Scrum, Kanban</p>
+        <p><b>Tools:</b> Bitbucket, Git, GitHub, VS Code</p>
+    </section>
+
+    <section class="lines">
+        <h2>Projects</h2>
+        <p><b>CO2Bank</b> — Android app for CO2 tracking with AI alerts (Flutter + Flask), university project at UMC | completed in 2026</p>
+        <p><b>Market System</b> — Java web app with MVC + DAO architecture and MySQL, built in a pair | 2026</p>
+        <p><b>FinPro</b> — Personal finance app in Python and Flask, deployed on Render | 2025</p>
+        <p><b>Nutrition App</b> — Final project of the technical course | Dec 2024</p>
+    </section>
+
+    <section class="lines">
+        <h2>Languages</h2>
+        <p>Portuguese — Native</p>
+        <p>English — Intermediate</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Web programming and systems development</li>
+            <li>Process modeling and workflow automation</li>
+            <li>Clear and objective communication</li>
+            <li>Fast learner and proactive</li>
+            <li>Creativity, organization and attention to detail</li>
+            <li>Requirements analysis and object-oriented programming (OOP)</li>
+            <li>Microsoft Office (Excel, Word, PowerPoint — intermediate/advanced)</li>
+        </ul>
+    </section>
+</body>
+</html>

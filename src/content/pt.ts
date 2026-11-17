@@ -33,6 +33,7 @@ export const pt: Content = {
       'Estagiária de desenvolvimento na Populis, onde crio telas em React e TypeScript e modelo workflows para uma plataforma de folha de pagamento e RH. Estudo Engenharia de Software na UMC.',
     ctaProjects: 'Ver projetos',
     ctaCv: 'Baixar CV',
+    cvFile: 'Sabrina-Silva-Curriculo.pdf',
     videoChip: 'CO2Bank · app Android publicado',
     videoAria: 'Demonstração do app CO2Bank: login, extrato, gráfico de CO2, Open Finance e cupons',
   },

@@ -33,6 +33,7 @@ export const en: Content = {
       'Development intern at Populis, where I build React and TypeScript screens and design workflows for a payroll and HR platform. Software Engineering student at UMC, Brazil.',
     ctaProjects: 'See projects',
     ctaCv: 'Download CV',
+    cvFile: 'Sabrina-Silva-Resume.pdf',
     videoChip: 'CO2Bank · Android app, live',
     videoAria: 'CO2Bank app demo: login, statement, CO2 chart, Open Finance and coupons',
   },
