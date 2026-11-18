@@ -14,6 +14,10 @@ export const links = {
     apiCode: 'https://github.com/sabrinasiilva/co2bank-flask',
     video: 'https://drive.google.com/file/d/1IzNqTActtXeXCrlOLww5UnfDMfaRFG3w/view?usp=sharing',
   },
+  pista: {
+    live: 'https://sabrinasiilva.github.io/pista-enem/',
+    code: 'https://github.com/sabrinasiilva/pista-enem',
+  },
   finpro: {
     live: 'https://finpro-flo8.onrender.com',
     code: 'https://github.com/sabrinasiilva/FinPro',

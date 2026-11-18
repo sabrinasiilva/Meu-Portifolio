@@ -86,6 +86,19 @@ export const pt: Content = {
     },
     items: [
       {
+        name: 'Pista',
+        description:
+          'Tutor de ENEM com IA que não entrega a resposta: quando o aluno erra, um LLM (Gemini) faz perguntas até ele achar o próprio erro. Guardrails contra vazamento da resposta e manipulação do prompt, e avaliação automática do modelo: 0 vazamentos em 46 mensagens. 179 questões oficiais revisadas.',
+        tags: ['Gemini API', 'FastAPI', 'PostgreSQL', 'React', 'TypeScript', 'Docker'],
+        image: 'pista.png',
+        imageAlt: 'Página inicial do Pista, com um exemplo de pista respondendo ao erro do aluno',
+        links: [
+          { label: 'Ver online', href: links.pista.live, primary: true },
+          { label: 'Código', href: links.pista.code },
+        ],
+        note: 'A primeira pista pode levar até 1 minuto: a API acorda no plano gratuito.',
+      },
+      {
         name: 'FinPro',
         description:
           'Controle financeiro com login, receitas, despesas e carteira de investimentos. Filtro por período, gráficos, exportação para Excel e testes automatizados.',
@@ -142,12 +155,12 @@ export const pt: Content = {
       {
         icon: 'code',
         title: 'Em projetos',
-        tags: ['JavaScript', 'HTML/CSS', 'Python', 'Flask', 'Java', 'Servlet/JSP', 'Dart', 'Flutter', 'GitHub Actions', 'MySQL', 'PostgreSQL', 'SQLite', 'Firebase', 'Gemini API', 'pytest'],
+        tags: ['JavaScript', 'HTML/CSS', 'Python', 'Flask', 'Java', 'Servlet/JSP', 'Dart', 'Flutter', 'GitHub Actions', 'MySQL', 'PostgreSQL', 'SQLite', 'Firebase', 'Gemini API', 'FastAPI', 'Docker', 'Avaliação de LLMs', 'pytest'],
       },
       {
         icon: 'study',
         title: 'Estudando',
-        tags: ['Spring', 'Docker', 'Jest'],
+        tags: ['Spring', 'Embeddings', 'Jest'],
       },
     ],
   },
@@ -155,7 +168,7 @@ export const pt: Content = {
     title: 'Sobre',
     paragraphs: [
       'Comecei a programar no técnico da ETEC e segui para Engenharia de Software na UMC. Hoje, na Populis, trabalho entre o negócio e o código: modelo processos de RH e folha em BPMN, transformo em workflows e desenvolvo as telas que as pessoas usam.',
-      'Gosto de entender o sistema de ponta a ponta. Por isso já passei por front-end, back-end, mobile e testes, e com o CO2Bank comecei a trabalhar com IA. Infraestrutura é a próxima área que quero explorar.',
+      'Gosto de entender o sistema de ponta a ponta. Por isso já passei por front-end, back-end, mobile e testes, com o CO2Bank comecei a trabalhar com IA, e no Pista fui mais fundo: guardrails, avaliação de LLMs e latência. Infraestrutura é a próxima área que quero explorar.',
       'Fora do trabalho, crio ferramentas para resolver problemas meus, como os simulados que uso para estudar para as provas da faculdade.',
     ],
     location: 'Itaquaquecetuba, São Paulo – SP',

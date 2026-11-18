@@ -86,6 +86,19 @@ export const en: Content = {
     },
     items: [
       {
+        name: 'Pista',
+        description:
+          'AI tutor for the ENEM exam that never gives the answer away: when students get it wrong, an LLM (Gemini) asks questions until they find their own mistake. Guardrails against answer leaks and prompt manipulation, plus automated model evaluation: 0 leaks in 46 messages. 179 official questions, all reviewed.',
+        tags: ['Gemini API', 'FastAPI', 'PostgreSQL', 'React', 'TypeScript', 'Docker'],
+        image: 'pista.png',
+        imageAlt: 'Pista home page, with an example hint answering a student mistake',
+        links: [
+          { label: 'Live demo', href: links.pista.live, primary: true },
+          { label: 'Code', href: links.pista.code },
+        ],
+        note: 'The first hint may take up to a minute while the free-tier API wakes up.',
+      },
+      {
         name: 'FinPro',
         description:
           'Personal finance app with login, income, expenses and an investment portfolio. Period filters, charts, Excel export and automated tests.',
@@ -142,12 +155,12 @@ export const en: Content = {
       {
         icon: 'code',
         title: 'In projects',
-        tags: ['JavaScript', 'HTML/CSS', 'Python', 'Flask', 'Java', 'Servlet/JSP', 'Dart', 'Flutter', 'GitHub Actions', 'MySQL', 'PostgreSQL', 'SQLite', 'Firebase', 'Gemini API', 'pytest'],
+        tags: ['JavaScript', 'HTML/CSS', 'Python', 'Flask', 'Java', 'Servlet/JSP', 'Dart', 'Flutter', 'GitHub Actions', 'MySQL', 'PostgreSQL', 'SQLite', 'Firebase', 'Gemini API', 'FastAPI', 'Docker', 'LLM evaluation', 'pytest'],
       },
       {
         icon: 'study',
         title: 'Learning',
-        tags: ['Spring', 'Docker', 'Jest'],
+        tags: ['Spring', 'Embeddings', 'Jest'],
       },
     ],
   },
@@ -155,7 +168,7 @@ export const en: Content = {
     title: 'About',
     paragraphs: [
       'I started coding in a technical high school program at ETEC and moved on to Software Engineering at UMC. Today, at Populis, I work between business and code: I model HR and payroll processes in BPMN, turn them into workflows and build the screens people use.',
-      'I like understanding systems end to end. That is why I have worked on front-end, back-end, mobile and testing, and CO2Bank is where I started working with AI. Infrastructure is the next area I want to explore.',
+      'I like understanding systems end to end. That is why I have worked on front-end, back-end, mobile and testing, CO2Bank is where I started working with AI, and with Pista I went deeper: guardrails, LLM evaluation and latency. Infrastructure is the next area I want to explore.',
       'Outside work, I build tools to solve my own problems, like the practice quizzes I use to study for my university exams.',
     ],
     location: 'Itaquaquecetuba, São Paulo – Brazil',
